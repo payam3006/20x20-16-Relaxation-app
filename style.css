@@ -1,0 +1,83 @@
+body {
+  background-image: url(./image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+.circle {
+  border-radius: 50%;
+}
+h1 {
+  position: absolute;
+  top: 0;
+}
+.center {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 350px;
+  height: 350px;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  transition: 3.325s;
+  scale: 0.8;
+}
+.mainBreatheIn {
+  scale: 1;
+}
+.first {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.second {
+  width: 100%;
+  height: 100%;
+  transition: 7980s linear;
+}
+.rotating {
+  width: 27px;
+  height: 27px;
+  background-color: white;
+  position: absolute;
+  top: -42px;
+}
+.breatheRotate {
+  transform: rotate(360000deg);
+}
+p {
+  font-size: larger;
+  font-weight: 500;
+}
+.breatheIn,
+.breatheOut,
+.hold {
+  width: 95%;
+  height: 95%;
+}
+.hold {
+  border: 10px solid white;
+  clip-path: polygon(50% 50%, 79% 100%, 21% 100%);
+}
+.breatheIn {
+  border: 10px solid #4675cd;
+  clip-path: polygon(50% 50%, 79% 100%, 100% 100%, 100% 0, 50% 0);
+}
+.breatheOut {
+  border: 10px solid #1d3b74;
+  clip-path: polygon(50% 50%, 21% 100%, 0 100%, 0 0, 50% 0);
+}
+.hidden {
+  display: none;
+}
